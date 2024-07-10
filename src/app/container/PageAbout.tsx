@@ -18,20 +18,23 @@ const PageAbout: FC<PageAboutProps> = ({ className = "" }) => {
     <div
       className={`nc-PageAbout overflow-hidden relative ${className}`}
       data-nc-id="PageAbout"
+      
     >
       <title>About || Vacationsaga</title>
      <BgGlassmorphism/>
 
       {/* ======== BG GLASS ======== */}
 
-      <div className="container py-16 lg:py-28 space-y-16 lg:space-y-28">
+      <div className="container py-16 lg:py-28 space-y-16 lg:space-y-28 m-10" style={{border:"2px solid black" ,top:"-150px"}}>
         <SectionHero
           rightImg={rightImg}
           heading="About Us."
           btnText=""
           subHeading="Vacation Saga is a prime vacation holiday rental brand, welcoming guests by providing them suitable holiday lettings. We help our travellers to find ideal holiday homes and allow you to search holiday lettings easily by filtering the price range, date, amenities, according to your needs. Stays are extremely affordable in holiday apartments and country cottages. From a couch in a holiday apartment to an entire villa in Europe, Asia and United States, you’ll find everything with us. We provide short term holiday rentals with easy ways of bookings. By providing luxurious holiday homes with basic touches like balcony, refrigerator, parking, air conditioner and many more facilities, we continue to offer the best to our customers."
         />
+        {/* section founder  */}
          <SectionFounder/>
+
         <SectionHero2
           leftimg={leftimg}
           heading=""

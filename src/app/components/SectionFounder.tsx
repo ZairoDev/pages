@@ -58,11 +58,11 @@ const SectionFounder: React.FC = () => {
       </Heading>
       <div className="grid sm:grid-cols-2 gap-x-5 gap-y-8 lg:grid-cols-4 xl:gap-x-8">
         {FOUNDER_DEMO.map((item) => (
-          <div key={item.id} className="max-w-sm" style={{ backgroundColor: '#ebe7e7' }}>
+          <div key={item.id} className="max-w-sm" style={{ backgroundColor: '#ebe7e7'}}>
             <NcImage
-              containerClassName="relative h-0 aspect-h-1 aspect-w-1 rounded-xl overflow-hidden"
+              containerClassName="relative h-0 aspect-h-1 aspect-w-1 rounded-xl overflow-hidden                 "
               className="absolute inset-0 object-cover"
-              src={typeof item.avatar === 'string' ? item.avatar : item.avatar.src}
+              src={typeof item.avatar === 'string' ? item.avatar : item.avatar.src} 
             />
             <h3 className="text-lg font-semibold text-neutral-900 mt-4 md:text-xl dark:text-neutral-200">
               {item.name}

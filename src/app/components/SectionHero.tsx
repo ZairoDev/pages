@@ -20,8 +20,9 @@ const SectionHero: FC<SectionHeroProps> = ({
 }) => {
   return (
     <div
-      className={`nc-SectionHero relative ${className}`}
+      className={`nc-SectionHero relative ${className}`} 
       data-nc-id="SectionHero"
+      // style={{ marginTop: "-135px", border:"2px solid black", right:"4px" }} 
     >
       <div className="flex flex-col lg:flex-row space-y-14 lg:space-y-0 lg:space-x-10 items-center relative text-center lg:text-left">
         <div className="max-w-full xl:max-w-lg space-y-5 lg:space-y-7">

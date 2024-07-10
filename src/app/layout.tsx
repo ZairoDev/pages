@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import PageAbout from "./container/PageAbout";
+// import PageAbout from "./container/PageAbout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,8 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <PageAbout/>
+      <body className={inter.className} >
+        {/* <PageAbout className="padding left-6"/> */}
         {children}
         </body>
     </html>
